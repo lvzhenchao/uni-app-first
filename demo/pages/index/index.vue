@@ -8,13 +8,20 @@
 
 <script>
 	export default {
+		onLoad:function() {
+			console.log("index load")
+		},
+		onShow() {
+			console.log("index onshow")
+			console.log(getApp().globalData.name)
+		},
+		onReady() {
+			console.log("index ready")
+		},
 		data() {
 			return {
 				title: 'Hello lzc123'
 			}
-		},
-		onLoad() {
-
 		},
 		methods: {
 
