@@ -20,7 +20,7 @@
             "path" : "pages/cart/cart",
             "style" :                                                                                    
             {
-                "navigationBarTitleText": "",
+                "navigationBarTitleText": "cart",
                 "enablePullDownRefresh": false
             }
             
@@ -39,6 +39,26 @@
 				"color": "#F0AD4E"
 			}
 		}
+	},
+	"tabBar": {
+		"color": "blue",//未选中的颜色
+		"selectedColor": "red",//选中的颜色
+		"borderStyle": "white",//上面线的颜色
+		"backgroundColor": "yellow",//tabbar的背景颜色
+		"list": [
+			{
+				"pagePath": "pages/index/index",
+				"text": "首页"
+			},
+			{
+				"pagePath": "pages/cart/cart",
+				"text": "购物车"
+			},
+			{
+				"pagePath": "pages/user/user",
+				"text": "用户中心"
+			}
+		]
 	},
 	"uniIdRouter": {}
 }
