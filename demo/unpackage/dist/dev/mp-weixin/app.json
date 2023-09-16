@@ -1,0 +1,15 @@
+{
+  "pages": [
+    "pages/user/user",
+    "pages/index/index",
+    "pages/cart/cart"
+  ],
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "uni-app",
+    "navigationBarBackgroundColor": "green",
+    "backgroundColor": "red",
+    "enablePullDownRefresh": true
+  },
+  "usingComponents": {}
+}
