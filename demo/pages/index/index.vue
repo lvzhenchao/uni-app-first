@@ -1,28 +1,32 @@
 <template>
-	<view class="content">
-		<view class="text-area">
-			<text class="title">{{title}}</text>
-		</view>
-	</view>
+<!--	<view class="content">-->
+<!--		<view class="text-area">-->
+<!--			<text class="title">{{title}}</text>-->
+<!--		</view>-->
+<!--	</view>-->
+
+	<view hover-class="v1">hello</view>
+	<view class="">world</view>
+
 </template>
 
 <script>
 	export default {
-		onLoad:function() {
-			console.log("index load")
-		},
-		onShow() {
-			console.log("index onshow")
-			console.log(getApp().globalData.name)
-		},
-		onReady() {
-			console.log("index ready")
-		},
-		data() {
-			return {
-				title: 'Hello lzc123'
-			}
-		},
+		// onLoad:function() {
+		// 	console.log("index load")
+		// },
+		// onShow() {
+		// 	console.log("index onshow")
+		// 	console.log(getApp().globalData.name)
+		// },
+		// onReady() {
+		// 	console.log("index ready")
+		// },
+		// data() {
+		// 	return {
+		// 		title: 'Hello lzc123'
+		// 	}
+		// },
 		methods: {
 
 		}
@@ -30,6 +34,9 @@
 </script>
 
 <style>
+	.v1 {
+		color: red;
+	}
 	.content {
 		display: flex;
 		flex-direction: column;
