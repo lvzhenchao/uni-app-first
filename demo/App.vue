@@ -17,7 +17,7 @@
 
 <style>
 	/*每个页面公共css */
-	.title{
+	/* .title{
 		color: blue;
-	}
+	} */
 </style>
