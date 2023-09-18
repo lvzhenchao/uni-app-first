@@ -52,6 +52,15 @@
             }
             
         }
+        ,{
+            "path" : "pages/text/text",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
     ],
 	
 	"globalStyle": {
