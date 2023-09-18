@@ -5,8 +5,19 @@
 <!--		</view>-->
 <!--	</view>-->
 
-	<view hover-class="v1">hello</view>
-	<view class="">world</view>
+	<!-- <view hover-class="v1">hello</view>
+	<view >world</view> -->
+	<!-- <scroll-view class="scroll-y" scroll-y="true" >
+		<view class="v1"></view>
+		<view class="v2"></view>
+		<view class="v3"></view>
+	</scroll-view> -->
+	
+	<scroll-view class="scroll-x" scroll-x="true" >
+		<view class="v11"></view>
+		<view class="v22"></view>
+		<view class="v33"></view>
+	</scroll-view>
 
 </template>
 
@@ -34,9 +45,49 @@
 </script>
 
 <style>
-	.v1 {
-		color: red;
+	.scroll-x {
+		white-space: nowrap;
 	}
+	.v11 {
+		display: inline-block;
+		width: 100%;
+		height: 300rpx;
+		background-color: royalblue;
+	}
+	.v22 {
+		display: inline-block;
+		width: 100%;
+		height: 300rpx;
+		background-color: aqua;
+	}
+	.v33 {
+		display: inline-block;
+		width: 100%;
+		height: 300rpx;
+		background-color: brown;
+	}
+	
+	.scroll-y {
+		height: 400rpx;
+	}
+	.v1 {
+		width: 100%;
+		height: 300rpx;
+		background-color: royalblue;
+	}
+	.v2 {
+		width: 100%;
+		height: 300rpx;
+		background-color: aqua;
+	}
+	.v3 {
+		width: 100%;
+		height: 300rpx;
+		background-color: brown;
+	}
+	/* .v1 {
+		color: red;
+	} */
 	.content {
 		display: flex;
 		flex-direction: column;

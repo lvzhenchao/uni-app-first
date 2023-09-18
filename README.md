@@ -14,3 +14,5 @@
 ## 基础组件
 ### view 视图容器，用来包裹其他真正显示的组件；类似div,用于包裹各种元素内容;
 #### 属性 hover-class:点击出现的效果；hover-stop-propagation：阻止冒泡
+### scroll-view 区域滚动容器；
+#### 属性 scroll-x 横向滚动；scroll-y 纵向滚动
