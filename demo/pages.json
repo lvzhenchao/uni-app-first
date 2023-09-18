@@ -43,6 +43,15 @@
             }
             
         }
+        ,{
+            "path" : "pages/swiper/swiper",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
     ],
 	
 	"globalStyle": {
