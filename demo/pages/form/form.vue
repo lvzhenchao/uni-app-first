@@ -21,6 +21,23 @@
 				<checkbox value="golang" /><text>golang</text>
 			</label>
 		</checkbox-group>
+		<view>
+			<switch checked="true" @change="schange" />
+		</view>
+		
+		<view>
+			<slider @change="sliChange"/>
+		</view>
+		
+		<text>picker:</text>
+		<picker mode="selector" :range="lanuage" @change="picChange">
+			<view>{{lanuage[index]}}</view>
+		</picker>
+		
+		<text>pickerTime:</text>
+		<picker mode="time" :range="time" @change="picTimeChange">
+			<view>{{time}}</view>
+		</picker>
 		
 		<form @submit="" @reset="">
 			<text>用户名:{{username}}</text>
@@ -35,7 +52,10 @@
 	export default {
 		data() {
 			return {
-				username: ''
+				username: '',
+				lanuage : ['php', 'golang', 'java'],
+				index: 0,
+				time: '12:00'
 			}
 		},
 		methods: {
@@ -44,6 +64,18 @@
 			},
 			chChange:function(e){
 				console.log(e.detail.value)
+			},
+			schange:function(e){
+				console.log(e.detail.value)
+			},
+			sliChange:function(e){
+				console.log(e.detail.value)
+			},
+			picChange:function(e){
+				this.index = e.detail.value
+			},
+			picTimeChange:function(e){
+				this.time = e.detail.value
 			}
 		}
 	}
