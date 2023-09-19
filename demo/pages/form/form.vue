@@ -3,6 +3,7 @@
  -->
 <template>
 	<view>
+		<form @submit="sub" @reset="">
 		<button type="default">按钮</button>
 		<label>
 			<checkbox value="cb"  checked="true"/><text>选中</text>
@@ -39,11 +40,11 @@
 			<view>{{time}}</view>
 		</picker>
 		
-		<form @submit="" @reset="">
-			<text>用户名:{{username}}</text>
-			<input type="text" @input="input1" value="" />
-			<button form-type="submit">Submit</button>
-			<button type="default" form-type="reset">Reset</button>
+		<text>用户名:{{username}}</text>
+		<input type="text" name='username' @input="input1" value="" />
+		<button type="primary" form-type="submit">Submit</button>
+		<button type="default" form-type="reset">Reset</button>
+		
 		</form>
 	</view>
 </template>
@@ -76,6 +77,9 @@
 			},
 			picTimeChange:function(e){
 				this.time = e.detail.value
+			},
+			sub:function(e){
+				console.log(e.detail.value)
 			}
 		}
 	}
