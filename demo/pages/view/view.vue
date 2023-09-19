@@ -8,7 +8,7 @@ hover-stop-propagation 阻止本节点的祖先节点出现点击态，阻止冒
 	<!-- <view class="" hover-class="v1">hello lampol</view> -->
 	<view class="v2">
 		<view hover-class="v1">
-			hello lzc
+			hello lzc {{id}}
 		</view>
 	</view>
 	
@@ -22,9 +22,12 @@ hover-stop-propagation 阻止本节点的祖先节点出现点击态，阻止冒
 
 <script>
 	export default {
+		onLoad:function(options) {
+			this.id = options.id
+		},
 		data() {
 			return {
-				
+				id:''
 			}
 		},
 		methods: {

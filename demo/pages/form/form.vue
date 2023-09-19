@@ -8,7 +8,7 @@
 		<label>
 			<checkbox value="cb"  checked="true"/><text>选中</text>
 		</label>
-		<editor placeholder="富文本编辑器"></editor>
+		<!-- <editor placeholder="富文本编辑器"></editor> -->
 		
 		<text>复选框</text>
 		<checkbox-group name="" @change="chChange">
@@ -44,6 +44,20 @@
 		<input type="text" name='username' @input="input1" value="" />
 		<button type="primary" form-type="submit">Submit</button>
 		<button type="default" form-type="reset">Reset</button>
+		
+		<navigator open-type="navigate" url="/pages/view/view">
+			<text>跳转到视图</text>
+		</navigator>
+		
+		<navigator open-type="redirect" url="../view/view?id=123456">
+			<text>跳转到视图2带参数</text>
+		</navigator>
+		
+		<navigator open-type="switchTab" url="/pages/index/index">
+			<text>跳转tobar</text>
+		</navigator>
+		
+		
 		
 		</form>
 	</view>
