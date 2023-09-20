@@ -1,7 +1,6 @@
 <template>
 	<view>
-		<uni-badge text="222" type="success"></uni-badge>
-		
+		<uni-calendar lunar="" @change=""></uni-calendar>
 	</view>
 </template>
 

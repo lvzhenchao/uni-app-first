@@ -1,7 +1,6 @@
 <template>
 	<view>
-		<uni-badge text="222" type="success"></uni-badge>
-		
+		<uni-combox label="" :candidates="city" placeholder="输入"></uni-combox>
 	</view>
 </template>
 
@@ -9,7 +8,7 @@
 	export default {
 		data() {
 			return {
-				
+				city:['青岛', '北京', '南京']
 			}
 		},
 		methods: {

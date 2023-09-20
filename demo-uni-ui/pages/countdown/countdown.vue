@@ -1,7 +1,6 @@
 <template>
 	<view>
-		<uni-badge text="222" type="success"></uni-badge>
-		
+		<uni-countdown color="" background-color="" :day="1" :hour="1" :minute="13" :second="30"></uni-countdown>
 	</view>
 </template>
 
