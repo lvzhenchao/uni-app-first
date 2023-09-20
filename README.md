@@ -16,3 +16,6 @@
 #### 属性 hover-class:点击出现的效果；hover-stop-propagation：阻止冒泡
 ### scroll-view 区域滚动容器；
 #### 属性 scroll-x 横向滚动；scroll-y 纵向滚动
+
+# 5、编译：
+## 条件编译，在编译时根据这些特殊的注释，将注释里面的代码编译到不同平台

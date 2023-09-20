@@ -1,0 +1,1 @@
+<view class="container"><text>这个只会在小程序下显示</text><view><text>{{msg}}</text></view></view>
