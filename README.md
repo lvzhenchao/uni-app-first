@@ -19,3 +19,9 @@
 
 # 5、编译：
 ## 条件编译，在编译时根据这些特殊的注释，将注释里面的代码编译到不同平台
+
+# 6、页面和路由
+## 主要是页面跳转
+### uni.navigateTo 保留当前页面，跳转到应用内的某个页面，使用uni.navigateBack
+### uni.redirectTo 关闭当前页面，跳转到应用内的某个页面。
+### uni.switchTab 跳转到tabBar页面，并关闭其他所有非tabBar页面
