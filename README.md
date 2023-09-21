@@ -25,3 +25,28 @@
 ### uni.navigateTo 保留当前页面，跳转到应用内的某个页面，使用uni.navigateBack
 ### uni.redirectTo 关闭当前页面，跳转到应用内的某个页面。
 ### uni.switchTab 跳转到tabBar页面，并关闭其他所有非tabBar页面
+
+# 7、数据缓存:浏览器的localStorage
+## 存储：uni.setStorage
+## 获取：uni.getStorage
+## 移除：uni.removeStorage
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
