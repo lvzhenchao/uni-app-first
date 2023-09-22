@@ -31,6 +31,9 @@
 ## 获取：uni.getStorage
 ## 移除：uni.removeStorage
 
+# 8、网络
+## uni.request 请求数据；H5会有跨域，小程序没问题；前端解决方法：后端接收数据：fiel_get_content('php://input')
+
 
 
 
