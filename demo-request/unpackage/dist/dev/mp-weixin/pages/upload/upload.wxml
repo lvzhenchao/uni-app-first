@@ -1,0 +1,1 @@
+<view><button type="primary" data-event-opts="{{[['tap',[['uploadImg',['$event']]]]]}}" bindtap="__e">选择图片</button><text>{{url}}</text><image src="{{url}}" mode="aspectFill" alt class="_img"></image></view>

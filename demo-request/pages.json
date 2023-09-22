@@ -13,6 +13,15 @@
             }
             
         }
+        ,{
+            "path" : "pages/upload/upload",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
     ],
 	"globalStyle": {
 		"navigationBarTextStyle": "black",
