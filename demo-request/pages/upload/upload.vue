@@ -21,20 +21,38 @@
 				uni.chooseImage({
 					success:function(res){
 						console.log(res)
-						that.url = res.tempFilePaths
-						//预览
-						uni.previewImage({
-							urls:res.tempFilePaths
-						})
-						//获取图片信息,直接出来
-						uni.getImageInfo({
-							src: res.tempFilePaths
-						})
-						//保存到本地
-						uni.saveImageToPhotosAlbum({
-							filePath:res.tempFilePaths,
-							success:function(){
-								console.log("保存成功")
+						// that.url = res.tempFilePaths //本地地址
+						// //预览
+						// uni.previewImage({
+						// 	urls:res.tempFilePaths
+						// })
+						// //获取图片信息,直接出来
+						// uni.getImageInfo({
+						// 	src: res.tempFilePaths
+						// })
+						// //保存到本地
+						// uni.saveImageToPhotosAlbum({
+						// 	filePath:res.tempFilePaths,
+						// 	success:function(){
+						// 		console.log("保存成功")
+						// 	}
+						// })
+						
+						//上传到服务器
+						uni.uploadFile({
+							url: 'https://www.example.com/upload', //仅为示例，非真实的接口地址
+							filePath: res.tempFilePaths,
+							name: 'file',
+							formData: {
+								'user': 'test'
+							},
+							success: (uploadFileRes) => {
+								//外网地址
+								that.url = uploadFileRes.data
+								console.log(uploadFileRes.data);
+							},
+							fail:function(){
+								console.log("上传失败")
 							}
 						})
 					}
