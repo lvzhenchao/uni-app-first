@@ -1,0 +1,1 @@
+<view><button type="primary" data-event-opts="{{[['tap',[['getLocation',['$event']]]]]}}" bindtap="__e">获取位置</button></view>

@@ -21,7 +21,17 @@
   "libVersion": "3.1.1",
   "appid": "touristappid",
   "projectname": "demo-request",
-  "condition": {},
+  "condition": {
+    "miniprogram": {
+      "list": [
+        {
+          "name": "pages/loction/loction",
+          "pathName": "pages/loction/loction",
+          "query": ""
+        }
+      ]
+    }
+  },
   "editorSetting": {
     "tabIndent": "insertSpaces",
     "tabSize": 2

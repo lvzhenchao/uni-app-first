@@ -34,7 +34,9 @@
 # 8、网络
 ## uni.request 请求数据；H5会有跨域，小程序没问题；前端解决方法：后端接收数据：fiel_get_content('php://input')
 ## uni.chooseImage 上传; uni.previewImage 预览；uni.getImageInfo 获取上传的图片信息
-## 
+
+# 9、下拉刷新和上拉加载
+
 
 
 

@@ -1,5 +1,6 @@
 {
   "pages": [
+    "pages/loction/loction",
     "pages/index/index",
     "pages/request/request",
     "pages/upload/upload"
